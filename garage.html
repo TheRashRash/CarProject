@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR APP</title>
+    <ul>
+      <li><a href="index.html">HomePage</a></li>
+      <li><a href="car.html">Cars</a></li>
+    </ul>
+  </head>
+  <body>
+
+    <button type="button" id="readGarageButton">Read Garage</button><br/><br/>
+
+    <input type="text" id="getGarageID" placeholder="enter garage ID to read" />
+    <button type="button" id="specificGarageButton">Read Garage ID</button><br/><br/>
+
+    <input type="text" id="garageName" placeholder="enter garage name" />
+    <button type="button" id="createGarageButton">Create Garage</button><br/><br/>
+
+    <input type="text" id="delGarageID" placeholder="enter garage ID to delete" />
+    <button type="button" id="deleteGarageButton">Delete Garage</button><br/><br/>
+
+    <input type="text" id="updateGarageID" placeholder="enter garage ID to update" />
+    <input type="text" id="updateName" placeholder="enter updates name" />
+    <button type="button" id="updateGarageButton">Update Garage</button><br/><br/>
+
+    <ul id="garageOutput"></ul><br/>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./garage.js"></script>
+  </body>
+</html>
