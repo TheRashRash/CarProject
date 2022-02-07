@@ -13,4 +13,5 @@ export const DelGarageID = document.getElementById(`DelGarage`)
 export const DelBtn = document.getElementById(`DelGarageButton`)
 //update
 export const UpdGarageID = document.getElementById(`UpdGarage`)
+export const UpdIn = document.getElementById(`UpdInput`)
 export const UpdBtn = document.getElementById(`UpdGarageButton`)
