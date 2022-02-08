@@ -23,14 +23,37 @@
             <li><a href="car.html">Cars</a></li>
         </ul>
     </nav>
+
+</div>
+</header>
+
+    <div>
+    <button type="button" id="readGarageButton">Read Garage</button><br/><br/>
+
+    <input type="text" id="getGarageID" placeholder="enter garage ID to read" />
+    <button type="button" id="specificGarageButton">Read Garage ID</button><br/><br/>
+
+    <input type="text" id="garageName" placeholder="enter garage name" />
+    <button type="button" id="createGarageButton">Create Garage</button><br/><br/>
+
+    <input type="text" id="delGarageID" placeholder="enter garage ID to delete" />
+    <button type="button" id="deleteGarageButton">Delete Garage</button><br/><br/>
+
+    <input type="text" id="updateGarageID" placeholder="enter garage ID to update" />
+    <input type="text" id="updateName" placeholder="enter updates name" />
+    <button type="button" id="updateGarageButton">Update Garage</button><br/><br/>
+
+    <ul id="garageOutput"></ul><br/>
+
+    </div>
+
  
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="text/javascript" src="./script.js"></script>
+    <script type="module" src="./garage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    </div>
-    </header>
+    
 
 </body>
 </html>
