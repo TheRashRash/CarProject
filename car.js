@@ -101,8 +101,11 @@ const carFindByName = () => {
 
   DOM.carOutput.innerHTML = ``;
 
-  axios.get(`http://localhost:8080/car/findByName/${DOM.getCarByName.value}`)
-    .then((response) => {
+  axios.get(`http://localhost:8080/car/findByName/${DOM.getCarByName.value}`,{
+      // id: "0",
+      // name: "string",
+      name : DOM.name.value,
+    }).then((response) => {
       console.log(response);
       DOM.carOutput.innerHTML = `${JSON.stringify(response.data)}`;
     }).catch((err) => {
