@@ -36,6 +36,10 @@ caoruselSlide.addEventListener('transitionend', ()=>{
         counter = caoruselImages.length - counter;
         caoruselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'
     }
+
 })
+
+})
+
 
 
