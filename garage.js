@@ -48,7 +48,7 @@ const deleteGarage = () => {
   axios.delete(`http://localhost:8080/garage/delete/${DOM.delGarageID.value}`)
     .then((response) => {
       console.log(response);
-      DOM.DelGarageID.value = "";
+      DOM.delGarageID.value = "";
       getGarage();
     }).catch((err) => {
       console.log(err);
