@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+</head>
+<body id = "body">
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+
+    <header>
+    <div class="container">
+        <img src="./images/logo.png" alt="logo" class="logo" width="120" height="50">
+        <h1 id="title">Auto Trading</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="garage.html">Garages</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+
+    <button type="button" id="readCarButton">read cars</button><br/><br/>
+
+    <input type="text" id="getCarID" placeholder="enter car ID to read" />
+    <button type="button" id="specificCarButton">Read Car ID</button><br/><br/>
+
+    <input type="text" id="getCarByName" placeholder="enter car name to read" />
+    <button type="button" id="getCarByNameButton">Read Car ID</button><br/><br/>
+
+    <input type="text" id="name" placeholder="enter car name" />
+    <input type="text" id="colour" placeholder="enter colour" />
+    <input type="text" id="make" placeholder="enter make" />
+    <input type="text" id="model" placeholder="enter model" />
+    <input type="text" id="doors" placeholder="enter door number" />
+    <input type="text" id="garageID" placeholder="enter garage ID" />
+    <button type="button" id="createCarButton">Create Car</button><br/><br/>
+
+    <input type="text" id="deleteCarID" placeholder="enter Car ID to delete" />
+    <button type="button" id="deleteCarButton">Delete Car</button><br/><br/>
+
+    <input type="text" id="updateCarName" placeholder="enter updated car name" />
+    <input type="text" id="updateColour" placeholder="enter updated colour" />
+    <input type="text" id="updateMake" placeholder="enter updated make" />
+    <input type="text" id="updateModel" placeholder="enter updated model" />
+    <input type="text" id="updateDoors" placeholder="enter updated door number" />
+    <input type="text" id="updateCarID" placeholder="enter car ID to update" />
+    <button type="button" id="updateCarButton">Update Car</button><br/><br/>
+
+    <ul id="carOutput"></ul><br/>
+ 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./car.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
