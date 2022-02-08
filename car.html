@@ -10,8 +10,7 @@
     <link type="text/css" rel="stylesheet" href="index.css"/>
     <link type="text/css" rel="stylesheet" href="carStyle.css">
 </head>
-<body id = "body">
-    <link type="text/css" rel="stylesheet" href="index.css"/>
+<body>
 
     <header>
     <div class="container">
@@ -25,24 +24,26 @@
     </nav>
 </div>
 </header>
-    <h2 id="carSearch">Search your car</h2>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Find by Name" title="Type in a name"><br><br>
-    <ul id="myUL">
-        <li><a href="#">Audi</a></li>
-        <li><a href="#">BMW</a></li>
-      
-        <li><a href="#">Mercedes</a></li>
-        <li><a href="#">Masseratti</a></li>
-        <li><a href="#">Tesla</a></li>
-      </ul><br>
+    <div class="container car-search">
+        <h2 id="carSearch">Search name: </h2>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Find by Name" title="Type in a name" style="height: 50px; width:300px;"><br><br>
+        <ul id="myUL">
+            <li><a href="#">Andrew</a></li>
+            <li><a href="#">Jim</a></li>
+            <li><a href="#">Billy</a></li>
+            <li><a href="#">Bob</a></li>
+            <li><a href="#">Zodiac</a></li>
+        </ul><br>
+    </div>
 
-    <button type="button" id="readCarButton">read cars</button><br/><br/>
+<div class="section-car container-md mt-2">
+    <button class="btn btn-outline-secondary" type="button" id="readCarButton">Read Cars</button><br/><br/>
 
     <input type="text" id="getCarID" placeholder="enter car ID to read" />
-    <button type="button" id="specificCarButton">Read Car ID</button><br/><br/>
+    <button class="btn btn-outline-secondary" type="button" id="specificCarButton">Read Car ID</button><br/><br/>
 
     <input type="text" id="getCarByName" placeholder="enter car name to read" />
-    <button type="button" id="getCarByNameButton">Read Car ID</button><br/><br/>
+    <button class="btn btn-outline-secondary" type="button" id="getCarByNameButton">Read Car Name</button><br/><br/>
 
     <input type="text" id="name" placeholder="enter car name" />
     <input type="text" id="colour" placeholder="enter colour" />
@@ -50,10 +51,10 @@
     <input type="text" id="model" placeholder="enter model" />
     <input type="text" id="doors" placeholder="enter door number" />
     <input type="text" id="garageID" placeholder="enter garage ID" />
-    <button type="button" id="createCarButton">Create Car</button><br/><br/>
+    <button class="btn btn-outline-secondary" type="button" id="createCarButton">Create Car</button><br/><br/>
 
     <input type="text" id="deleteCarID" placeholder="enter Car ID to delete" />
-    <button type="button" id="deleteCarButton">Delete Car</button><br/><br/>
+    <button class="btn btn-outline-secondary" type="button" id="deleteCarButton">Delete Car</button><br/><br/>
 
     <input type="text" id="updateCarName" placeholder="enter updated car name" />
     <input type="text" id="updateColour" placeholder="enter updated colour" />
@@ -61,11 +62,11 @@
     <input type="text" id="updateModel" placeholder="enter updated model" />
     <input type="text" id="updateDoors" placeholder="enter updated door number" />
     <input type="text" id="updateCarID" placeholder="enter car ID to update" />
-    <button type="button" id="updateCarButton">Update Car</button><br/><br/>
+    <button class="btn btn-outline-secondary" type="button" id="updateCarButton">Update Car</button><br/><br/>
 
     <ul id="carOutput"></ul><br/>
  
-
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./car.js"></script>

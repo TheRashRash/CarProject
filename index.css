@@ -190,12 +190,26 @@ nav a:hover::before{
 /*  */
 
 
-.garages-page {
+.page {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
-button {
+.car-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.car-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+#myUL {
+  padding: 10px;
 }
