@@ -1,0 +1,294 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  /* main css */
+  
+  /* .container {
+    margin: 0 auto;
+  } */
+  
+  /* body{
+    background-color: rgb(245, 245, 245);
+    min-height: 100%;
+  } */
+  
+  /* main container */
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .row {
+      display: flex;
+
+  }
+
+.card {
+    display: flex;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+
+.fs-4 {
+
+}
+
+.btn-xl {
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #f4623a;
+    border-color: #f4623a;
+}
+  
+  /* header section */
+  
+  /* header{
+    background : #f8f8f8;
+    margin-top: 40px;
+    height: 100px;
+  }
+  
+  header::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  
+  .logo{
+    float: left;
+    max-width: 150px;
+    max-height: 50px;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 60px;
+  
+  }
+  
+  #title{
+    float: left;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  nav {
+    float: right;
+    margin-top: 30px;
+  }
+  
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 10px;
+  
+    position: relative;
+  }
+  
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase; 
+    
+  }
+  nav a:hover{
+    color: #000;
+    font-style: oblique;
+  }
+  
+  nav a::before{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #444;
+  
+    position: absolute;
+    top: 0;
+  
+    transition: all ease-in-out 250ms;
+  }
+  nav a:hover::before{
+    width: 100%;
+  }
+  
+  
+  .selections {
+    display: flex;
+    padding: 20px;
+  }
+   */
+  
+  /* carousel section  */
+  
+  
+  /* .carousel-inner {
+    padding: 30px;
+    max-height: 100%;
+    min-width: 100%;
+  }
+  
+  
+  .carousel-container{
+    width: 80%;
+    margin: auto;
+    border: 4px solid black;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-slide{
+    display: flex;
+    width: 80%;
+    height: 400px;
+  }
+  
+  #prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #image{
+    height: 400px;
+    width: 400px;
+    position: relative;
+  
+  }
+  
+  #exploreC{
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    left: 700;
+  }
+  
+  #exploreG{
+    z-index: 100;
+    position: absolute;
+    color: whitesmoke;
+    font-size: 80px;
+    font-weight: bold;
+    left: 300px;
+    top: 620px;
+  }
+  
+  #garageOutput{
+    color: black;
+  }
+  
+  #carOutput{
+    color: black;
+  } */
+  
+  /*  */
+/*   
+  
+  .page {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .car-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .car-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  #myUL {
+    padding: 10px;
+  }
+   */
+  
+  /* CAR PAGE */
+  
+  /* car search section */
+  
+  /* #carSearch {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: black;
+  }
+  
+  #myInput {
+      background-image: url('/images/css-search-icon.png'); Added a search icon to input */
+      /* background-position: 10px 12px;
+      background-repeat: no-repeat;
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+  }
+  
+  #myUL {
+      font-family: Arial, Helvetica, sans-serif;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    #myUL li a {
+      border: 1px solid #ddd;
+      margin-top: -1px;
+      background-color: #f6f6f6;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 16px;
+      color: black;
+      display: block; 
+    }
+    
+    #myUL li a:hover:not(.header) {
+      background-color: #eee;
+    }
+   */
+    /* end of car search section */
