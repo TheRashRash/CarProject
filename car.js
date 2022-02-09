@@ -15,6 +15,7 @@ DOM.deleteCarButton.onclick = () => carDelete();
 DOM.updateCarButton.onclick = () => carUpdate();
 DOM.specificCarButton.onclick = () => carReadID();
 DOM.getCarByNameButton.onclick = () => carFindByName();
+DOM.searchBox.onfocus = () => customerFindByName();
 
 const carRead = () => {
   DOM.carOutput.innerHTML = ``;
@@ -97,18 +98,33 @@ const carReadID = () => {
     });
 }
 
-const carFindByName = () => {
-
-  DOM.carOutput.innerHTML = ``;
-
-  axios.get(`http://localhost:8080/car/findByName/${DOM.getCarByName.value}`,{
-      // id: "0",
-      // name: "string",
-      name : DOM.name.value,
-    }).then((response) => {
-      console.log(response);
-      DOM.carOutput.innerHTML = `${JSON.stringify(response.data)}`;
-    }).catch((err) => {
-      console.log(err);
-    });
+const customerFindByName = () => {
+if(carRead.name == carCreate.name){
+  axios.get(`http://localhost:8080/car/read/${DOM.name.value}`,{
+    // name : DOM.name.value,
+    name : DOM.userNameList
+  }).then((response) => {
+    console.log(response);
+    customerFindByName();
+  }).catch((err) => {
+    console.log(err);
+  });
+  }
 }
+
+// const carCreate = () => {
+//   axios.post(`http://localhost:8080/car/create`, {
+//     name : DOM.name.value,
+//     colour : DOM.colour.value,
+//     make : DOM.make.value,
+//     model : DOM.model.value,
+//     doors : DOM.doors.value,
+//     garage : {id : DOM.garageID.value}
+//   })
+//     .then((response) => {
+//       console.log(response);
+//       carRead();
+//     }).catch((err) => {
+//       console.log(err.response.data);
+//     });
+// }

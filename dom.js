@@ -48,3 +48,6 @@ export const updateCarID = document.getElementById(`updateCarID`);
 
 export const updateCarButton = document.getElementById(`updateCarButton`);
 
+//Search Car by Customer Name Function
+export const searchBox = document.getElementById(`myInput`);
+export const userNameList = document.getElementById(`myUL`);
